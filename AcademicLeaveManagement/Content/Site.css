@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", Tahoma, Arial, sans-serif; background: #f3f6fa; color: #1d2733; }
+.site-header { display: flex; justify-content: space-between; align-items: center; background: #1f3a5f; color: #fff; padding: 14px 24px; }
+.brand { font-size: 1.35rem; font-weight: 600; }
+.user-box { font-size: .95rem; }
+.logout-link { color: #ffd966; margin-left: 14px; text-decoration: none; font-weight: 600; }
+.logout-link:hover { text-decoration: underline; }
+.nav-bar { background: #2c5282; padding: 10px 24px; }
+.nav-bar a { color: #fff; text-decoration: none; font-weight: 500; }
+.nav-bar a:hover { text-decoration: underline; }
+.nav-bar .sep { color: #9db7d9; margin: 0 10px; }
+.content { max-width: 960px; margin: 24px auto; padding: 0 16px; min-height: 60vh; }
+.site-footer { text-align: center; color: #6b7a8c; font-size: .85rem; padding: 16px; }
+.card { background: #fff; border: 1px solid #dde4ee; border-radius: 8px; padding: 18px 22px; margin-bottom: 18px; }
+.card.narrow { max-width: 480px; }
+.field { margin-bottom: 14px; }
+.field label { display: block; font-weight: 600; margin-bottom: 4px; }
+.field.inline label { display: inline; font-weight: 400; }
+input[type=text], input[type=password], input[type=date], textarea, select { width: 100%; padding: 8px 10px; border: 1px solid #b8c4d4; border-radius: 4px; font: inherit; }
+.field-error { color: #c62828; font-size: .85rem; display: block; margin-top: 3px; }
+.btn { background: #2c5282; color: #fff; border: 0; padding: 9px 20px; border-radius: 4px; font: inherit; cursor: pointer; }
+.btn:hover { background: #1f3a5f; }
+.msg { display: block; margin-top: 12px; }
+.msg.error { color: #c62828; }
+.msg.success { color: #2e7d32; font-weight: 600; }
+.hint { color: #6b7a8c; font-size: .85rem; margin-top: 16px; }
+.welcome { font-size: 1.15rem; }
+.badge { background: #2c5282; color: #fff; padding: 2px 10px; border-radius: 10px; font-weight: 600; }
+.grid { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #dde4ee; }
+.grid th { background: #1f3a5f; color: #fff; text-align: left; padding: 9px 12px; }
+.grid td { padding: 8px 12px; border-top: 1px solid #e6ecf4; }
+.grid tr:nth-child(even) td { background: #f7f9fc; }
+.two-col { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
+.calendar { background: #fff; }
+.legend-box { display: inline-block; width: 14px; height: 14px; background: red; vertical-align: middle; margin-right: 6px; }

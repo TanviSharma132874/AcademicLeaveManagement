@@ -1,0 +1,46 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="AcademicLeaveManagement.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Leave Management</title>
+    <%: Styles.Render("~/Content/css") %>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="site-header">
+            <div class="brand">Academic Leave Management</div>
+            <asp:Panel ID="pnlUser" runat="server" CssClass="user-box" Visible="false">
+                <asp:Label ID="lblWelcome" runat="server" />
+                <asp:HyperLink ID="lnkLogout" runat="server" NavigateUrl="~/Logout.aspx" CssClass="logout-link">Logout</asp:HyperLink>
+            </asp:Panel>
+        </header>
+
+        <asp:Panel ID="pnlNav" runat="server" CssClass="nav-bar" Visible="false">
+            <asp:HyperLink ID="lnkDashboard" runat="server" NavigateUrl="~/Dashboard.aspx">Dashboard</asp:HyperLink>
+            <span class="sep">|</span>
+            <asp:HyperLink ID="lnkCalendar" runat="server" NavigateUrl="~/AcademicCalendar.aspx">Academic Calendar</asp:HyperLink>
+            <span class="sep">|</span>
+            <asp:HyperLink ID="lnkApply" runat="server" NavigateUrl="~/ApplyLeave.aspx">Apply Leave</asp:HyperLink>
+            <span class="sep">|</span>
+            <asp:HyperLink ID="lnkLeaves" runat="server" NavigateUrl="~/ViewLeaves.aspx">My Leaves</asp:HyperLink>
+        </asp:Panel>
+
+        <main class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+        <footer class="site-footer">
+            &copy; <span id="footerYear">2026</span> Academic Leave Management &nbsp;|&nbsp;
+            Active sessions: <asp:Label ID="lblActiveUsers" runat="server" />
+        </footer>
+    </form>
+    <%: Scripts.Render("~/bundles/site") %>
+</body>
+</html>
